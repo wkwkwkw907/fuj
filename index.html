@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Tinggi layar penuh */
+            margin: 0;
+            background-color: #222; /* Latar belakang gelap */
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: muncul 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animasi membal */
+        }
+
+        .emoji {
+            font-size: 150px; /* Ukuran emoji sangat besar */
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .teks {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Definisi Animasi */
+        @keyframes muncul {
+            0% {
+                transform: scale(0) rotate(-180deg);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="emoji">🖕</span>
+        <div class="teks">Ups...</div>
+    </div>
+
+</body>
+</html>
